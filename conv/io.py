@@ -6,5 +6,8 @@ from convnwb.io import (load_config, load_configs, save_config,
                         open_h5file, save_nwbfile)
 from convnwb.io.utils import get_files, make_session_name, make_file_list, missing_files
 
+# Link in sorting related io functions
+from convnwb.sorting.io import load_units
+
 ###################################################################################################
 ###################################################################################################
