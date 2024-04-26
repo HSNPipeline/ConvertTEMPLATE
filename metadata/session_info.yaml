@@ -15,8 +15,8 @@ experiment_name: XX
 experiment_description: >-
     The XX task is a XX.
     Subjects do XX.
-experiment_run_version: XX
-experiment_run_platform: Unity
+experiment_version: XX
+experiment_platform: Unity
 experiment_language: english
 
 # Experimenters

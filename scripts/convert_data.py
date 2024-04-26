@@ -105,21 +105,21 @@ def convert_data(SESSION=SESSION, SETTINGS=SETTINGS):
         ' ({})'.format(task.experiment['language'])
 
     # Initialize a NWB file
-    nwbfile = NWBFile(session_description=metadata['study']['session_description'],
-                      identifier=metadata['study']['identifier'],
+    nwbfile = NWBFile(session_description=metadata['session']['session_description'],
+                      identifier=metadata['session']['identifier'],
                       file_create_date=get_current_date(),
                       session_start_time=session_date,
-                      experimenter=metadata['study']['experimenter'],
+                      experimenter=metadata['session']['experimenter'],
                       experiment_description=experiment_description,
                       session_id=session_name,
-                      institution=metadata['study']['institution'],
-                      keywords=metadata['study']['keywords'],
+                      institution=metadata['session']['institution'],
+                      keywords=metadata['session']['keywords'],
                       notes=notes,
-                      source_script=metadata['study']['source_script'],
+                      source_script=metadata['session']['source_script'],
                       source_script_file_name='scripts/' + __file__,
                       data_collection=data_collection,
-                      stimulus_notes=metadata['study']['stimulus_notes'],
-                      lab=metadata['study']['lab'],
+                      stimulus_notes=metadata['session']['stimulus_notes'],
+                      lab=metadata['session']['lab'],
                       subject=subject)
 
     ## RECORDING DEVICE INFORMATION
@@ -172,7 +172,7 @@ def convert_data(SESSION=SESSION, SETTINGS=SETTINGS):
     ## BEHAVIOURAL DATA
 
     # Add event definitions
-    for event, description in metadata['events'].items():
+    for event, description in metadata['trial'].items():
         nwbfile.add_trial_column(event, description)
 
     # Add event information to NWB file
@@ -204,13 +204,13 @@ def convert_data(SESSION=SESSION, SETTINGS=SETTINGS):
                                      reference_frame='corner',
                                      rate=0.,
                                      description=metadata['position']['arena_x_range'])
-    boundaries.create_spatial_series(name='arena_z_range',
+    boundaries.create_spatial_series(name='arena_y_range',
                                      data=np.array([task.environment['...'],
                                                     task.environment['...']]),
                                      unit='virtual units',
                                      reference_frame='corner',
                                      rate=0.,
-                                     description=metadata['position']['arena_z_range'])
+                                     description=metadata['position']['arena_y_range'])
     nwbfile.add_acquisition(boundaries)
 
     # Set position data as a spatial series and add to NWB file
