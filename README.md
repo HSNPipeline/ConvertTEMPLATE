@@ -2,9 +2,9 @@
 
 Template structure for converting data to NWB format.
 
-[![Template](https://img.shields.io/badge/template-HSUPipeline/ConvertTEMPLATE-yellow.svg)](https://github.com/HSUPipeline/ConvertTEMPLATE)
-[![Sort](https://img.shields.io/badge/analysis-SortTEMPLATE-lightgrey)](https://github.com/HSUPipeline/SortTEMPLATE)
-[![Analysis](https://img.shields.io/badge/analysis-AnalyzeTEMPLATE-lightgrey)](https://github.com/HSUPipeline/AnalyzeTEMPLATE)
+[![Template](https://img.shields.io/badge/template-HSNPipeline/ConvertTEMPLATE-yellow.svg)](https://github.com/HSNPipeline/ConvertTEMPLATE)
+[![Sort](https://img.shields.io/badge/analysis-SortTEMPLATE-lightgrey)](https://github.com/HSNPipeline/SortTEMPLATE)
+[![Analysis](https://img.shields.io/badge/analysis-AnalyzeTEMPLATE-lightgrey)](https://github.com/HSNPipeline/AnalyzeTEMPLATE)
 
 ## TEMPLATE DESCRIPTION
 
@@ -17,7 +17,7 @@ layout from
 [StructuredScience](https://github.com/structuredscience/).
 
 For information on how to use this template in a project, see the
-[HSUPipeline Guide](https://github.com/HSUPipeline/Overview/blob/main/Guide.md).
+[HSNPipeline Guide](https://github.com/HSNPipeline/Overview/blob/main/Guide.md).
 
 Note: if copying this template for use, this section can be removed.
 
@@ -29,7 +29,7 @@ This repository is for managing and converting data files for the XX task,
 processing and converting the data into the
 [neurodata without borders](https://www.nwb.org/) format.
 
-This conversion follows the [ConvertTEMPLATE](https://github.com/HSUPipeline/ConvertTEMPLATE).
+This conversion follows the [ConvertTEMPLATE](https://github.com/HSNPipeline/ConvertTEMPLATE).
 
 ## Requirements
 
@@ -40,7 +40,7 @@ This repository requires Python >= 3.7.
 As well as typical scientific Python packages, dependencies include:
 
 - [pynwb](https://github.com/NeurodataWithoutBorders/pynwb)
-- [convnwb](https://github.com/HSUPipeline/convnwb)
+- [convnwb](https://github.com/HSNPipeline/convnwb)
 
 The full list of dependencies is listed in `requirements.txt`.
 
@@ -60,4 +60,4 @@ Data files can be processed by running the scripts available in the `scripts` fo
 The procedures are also detailed through the `notebooks`.
 
 For a detailed description of how this approach works, and instructions on making
-updates, see the [ConvertTEMPLATE](https://github.com/HSUPipeline/ConvertTEMPLATE).
+updates, see the [ConvertTEMPLATE](https://github.com/HSNPipeline/ConvertTEMPLATE).
