@@ -2,18 +2,25 @@
 
 import numpy as np
 
+# Import pynwb functionality of managing data and creating NWB files
 from pynwb import NWBFile, TimeSeries, ProcessingModule
 from pynwb.file import Subject, Units
 from pynwb.behavior import Position
 from pynwb.ecephys import ElectricalSeries
 
-# Add local folder with `conv` module
+# Import hsntools functionality
+from hsntools.paths import Paths
+from hsntools.objects import Electrodes
+from hsntools.io import load_config, load_task_object, save_nwbfile
+from hsntools.io.utils import get_files, make_session_name
+from hsntools.sorting.io import load_units
+from hsntools.timestamps.dates import get_current_date, convert_time_to_date
+from hsntools.run import print_status
+
+# Add local code folder and import any needed code from local `conv` module
 import sys
 sys.path.append('..')
-from conv import Paths, Electrodes
-from conv.io import (get_files, make_session_name, load_config,
-                     load_task_object, open_h5file, save_nwbfile)
-from conv.utils import print_status, get_current_date, convert_time_to_date
+...
 
 # Import settings (from local folder)
 from settings import PROJECT_PATH, SESSION, SETTINGS

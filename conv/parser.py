@@ -1,9 +1,10 @@
 """Functions for parsing log files."""
 
+from hsntools.run import print_status
+
 # Import local code
 from conv.task import Task
 from conv.process import process_task
-from conv.utils import print_status
 
 ###################################################################################################
 ###################################################################################################
