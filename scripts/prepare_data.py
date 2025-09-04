@@ -1,11 +1,16 @@
 """Prepare files for conversion."""
 
-# Add local folder with `conv` module
+# Import hsntools functionality
+from hsntools.paths import Paths
+from hsntools.io.custom import load_configs, save_config, save_object
+
+from hsntools.io.utils import get_files, make_session_name
+from hsntools.run import print_status
+
+# Add local code folder and import any needed code from local `conv` module
 import sys
 sys.path.append('..')
-from conv import Paths, process_session
-from conv.io import get_files, make_session_name, load_configs, save_config, save_task_object
-from conv.utils import print_status
+from conv.parser import process_session
 
 # Import settings (from local folder)
 from settings import PROJECT_PATH, SESSION, SETTINGS
@@ -30,7 +35,7 @@ def prepare_data(SESSION=SESSION, SETTINGS=SETTINGS):
     if SETTINGS['PARSE_LOG']:
 
         task = process_session(paths, process=True, verbose=SETTINGS['VERBOSE'])
-        save_task_object(task, session_name, folder=paths.task)
+        save_object(task, session_name, folder=paths.task)
 
     ## COLLECT METADATA
 

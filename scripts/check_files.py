@@ -1,11 +1,14 @@
 """Check data files."""
 
-# Add local folder with `conv` module
+# Import hsntools functionality
+from hsntools.paths import Paths
+from hsntools.io.utils import get_files, make_file_list, missing_files
+from hsntools.run import print_status
+
+# Add local code folder and import any needed code from local `conv` module
 import sys
 sys.path.append('..')
-from conv import Paths
-from conv.io import get_files, make_file_list, missing_files
-from conv.utils import print_status
+...
 
 # Import settings
 from settings import PROJECT_PATH, EXPERIMENT

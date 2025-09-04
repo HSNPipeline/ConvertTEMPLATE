@@ -1,8 +1,7 @@
 """Task class."""
 
-from convnwb.objects.task import TaskBase
-
-from convnwb.plts.timestamps import plot_alignment
+from hsntools.objects.task import TaskBase
+from hsntools.plts.timestamps import plot_alignment
 
 ###################################################################################################
 ###################################################################################################

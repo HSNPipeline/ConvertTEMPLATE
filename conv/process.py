@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from convnwb.timestamps.align import fit_sync_alignment, predict_times
-from convnwb.utils.convert import convert_to_array, convert_type
-from convnwb.utils.log import print_status
+from hsntools.timestamps.align import fit_sync_alignment, predict_times
+from hsntools.utils.convert import convert_to_array, convert_type
+from hsntools.run import print_status
 
 # Import local code
 # from conv.measures import ...

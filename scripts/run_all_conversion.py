@@ -1,10 +1,14 @@
 """Run conversion on all sessions."""
 
+# Import hsntools functionality
+from hsntools.paths import Paths
+from hsntools.io.utils import get_files, make_session_name
+from hsntools.run import print_status, catch_error
+
+# Add local code folder and import any needed code from local `conv` module
 import sys
 sys.path.append('..')
-from conv import Paths
-from conv.io import get_files, make_session_name
-from conv.utils import print_status, catch_error
+...
 
 # Import processing functions (from local scripts)
 from prepare_data import prepare_data
