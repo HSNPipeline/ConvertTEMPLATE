@@ -2,7 +2,8 @@
 
 # Import hsntools functionality
 from hsntools.paths import Paths
-from hsntools.io import load_configs, save_config, save_task_object
+from hsntools.io.custom import load_configs, save_config, save_object
+
 from hsntools.io.utils import get_files, make_session_name
 from hsntools.run import print_status
 
@@ -34,7 +35,7 @@ def prepare_data(SESSION=SESSION, SETTINGS=SETTINGS):
     if SETTINGS['PARSE_LOG']:
 
         task = process_session(paths, process=True, verbose=SETTINGS['VERBOSE'])
-        save_task_object(task, session_name, folder=paths.task)
+        save_object(task, session_name, folder=paths.task)
 
     ## COLLECT METADATA
 
