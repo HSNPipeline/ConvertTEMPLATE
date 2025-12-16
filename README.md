@@ -3,7 +3,7 @@
 Template structure for converting data to NWB format.
 
 [![Template](https://img.shields.io/badge/template-HSNPipeline/ConvertTEMPLATE-yellow.svg)](https://github.com/HSNPipeline/ConvertTEMPLATE)
-[![Sort](https://img.shields.io/badge/analysis-SortTEMPLATE-lightgrey)](https://github.com/HSNPipeline/SortTEMPLATE)
+[![Prep](https://img.shields.io/badge/preprocessing-PrepTEMPLATE-lightgrey)](https://github.com/HSNPipeline/PrepTEMPLATE)
 [![Analysis](https://img.shields.io/badge/analysis-AnalyzeTEMPLATE-lightgrey)](https://github.com/HSNPipeline/AnalyzeTEMPLATE)
 
 ## TEMPLATE DESCRIPTION
@@ -49,8 +49,8 @@ The full list of dependencies is listed in `requirements.txt`.
 This repository is set up in the following way:
 
 - `conv/` contains local conversion code, using base code from `hsntools`
-- `notebooks/` contains notebooks that demonstrate examples of data conversion
 - `metadata/` contains config files that define metadata fields and task descriptions
+- `notebooks/` contains notebooks that demonstrate examples of data conversion
 - `scripts/` contains stand alone scripts to process data files
 
 ## Run Procedures
