@@ -1,6 +1,6 @@
 # ConvertTEMPLATE
 
-Template structure for converting data to NWB format.
+Template structure for converting HSN data to NWB.
 
 [![Template](https://img.shields.io/badge/template-HSNPipeline/ConvertTEMPLATE-yellow.svg)](https://github.com/HSNPipeline/ConvertTEMPLATE)
 [![Prep](https://img.shields.io/badge/preprocessing-PrepTEMPLATE-lightgrey)](https://github.com/HSNPipeline/PrepTEMPLATE)
@@ -23,17 +23,15 @@ Note: if copying this template for use, this section can be removed.
 
 ## Overview
 
-**Provide an overview of the analysis project here, for example:**
+*Provide an overview of the project / data here, for example:*
 
-This repository is for managing and converting data files for the XX task,
+This repository is for managing and converting data files for the `XX` task,
 processing and converting the data into the
 [neurodata without borders](https://www.nwb.org/) format.
 
 This conversion follows the [ConvertTEMPLATE](https://github.com/HSNPipeline/ConvertTEMPLATE).
 
 ## Requirements
-
-**Fill in any extra requirements here.**
 
 This repository requires Python >= 3.7.
 
@@ -44,14 +42,18 @@ As well as typical scientific Python packages, dependencies include:
 
 The full list of dependencies is listed in `requirements.txt`.
 
+*Fill in or edit any additional requirements here.*
+
 ## Repository Layout
 
 This repository is set up in the following way:
 
-- `conv/` contains local conversion code, using base code from `hsntools`
+- `conv/` contains local conversion code
 - `metadata/` contains config files that define metadata fields and task descriptions
 - `notebooks/` contains notebooks that demonstrate examples of data conversion
 - `scripts/` contains stand alone scripts to process data files
+
+*Add or edit any details about repository layout here.*
 
 ## Run Procedures
 
