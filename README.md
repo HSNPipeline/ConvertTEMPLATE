@@ -2,7 +2,7 @@
 
 Template structure for converting HSN data to NWB.
 
-[![Template](https://img.shields.io/badge/template-HSNPipeline/ConvertTEMPLATE-yellow.svg)](https://github.com/HSNPipeline/ConvertTEMPLATE)
+[![Template](https://img.shields.io/badge/HSNTemplate-ConvertTEMPLATE-yellow.svg)](https://github.com/HSNPipeline/ConvertTEMPLATE)
 [![Prep](https://img.shields.io/badge/preprocessing-PrepTEMPLATE-lightgrey)](https://github.com/HSNPipeline/PrepTEMPLATE)
 [![Analysis](https://img.shields.io/badge/analysis-AnalyzeTEMPLATE-lightgrey)](https://github.com/HSNPipeline/AnalyzeTEMPLATE)
 
